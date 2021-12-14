@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="653.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="物联云平台">
+            <items>
+              <MenuItem mnemonicParsing="false" text="云基础网站" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="233333">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="TempLabel" layoutX="18.0" layoutY="78.0" text="Label" />
+      <Label fx:id="HumiLabel" layoutX="18.0" layoutY="138.0" text="Label" />
+      <Label fx:id="LightsLabel" layoutX="18.0" layoutY="209.0" text="Label" />
+      <Label fx:id="Lamp1" layoutX="399.0" layoutY="276.0" text="Label" />
+      <Label fx:id="Lamp2" layoutX="399.0" layoutY="324.0" text="Label" />
+      <Label fx:id="Lamp3" layoutX="399.0" layoutY="231.0" text="Label" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="414.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bg.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="44.0" layoutX="83.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../iconfont/温度.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="44.0" layoutX="83.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../iconfont/湿度.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="44.0" layoutX="83.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../iconfont/光照强度.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="warnImage" fitHeight="81.0" fitWidth="84.0" layoutX="270.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Loading%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="279.0" layoutY="48.0" prefHeight="25.0" prefWidth="72.0" text="警报情况" textFill="#0b81ff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="zigbeelightbutton123" layoutX="274.0" layoutY="225.0" mnemonicParsing="false" onAction="#zigbeelightbutton" prefHeight="23.0" prefWidth="105.0" text="一区Zigbee灯灭" />
+      <Button fx:id="linelightbutton234" layoutX="268.0" layoutY="272.0" mnemonicParsing="false" onAction="#linelightbuttonone" prefHeight="23.0" prefWidth="117.0" text="一区有线街灯灭" />
+      <ImageView fx:id="lightsimage" fitHeight="150.0" fitWidth="200.0" layoutX="476.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/电灯,电灯,发光,光,灯泡,想法.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="linelightbutton345" layoutX="268.0" layoutY="320.0" mnemonicParsing="false" onAction="#linelightbuttontwo" prefHeight="23.0" prefWidth="117.0" text="二区有线街灯灭" />
+      
+   </children>
+</AnchorPane>
